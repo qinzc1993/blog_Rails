@@ -23,3 +23,5 @@ study Rails.
 | 1    | userId      |  varchar| 24   | user_id     | primary key                     |
 | 2    | userName    |  varchar| 24   | user_name   |                                 |
 | 3    | password    |  varchar| 60   | password    |                                 |
+
+commit
