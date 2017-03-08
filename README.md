@@ -11,6 +11,7 @@ study Rails.
   - Authority
   - Room
   - ChatMsg
+  - UserRoom
 
 User
 
@@ -21,13 +22,14 @@ User
 | 3    | password    |  varchar| 60   | password    |                                 |
 | 4    | sex         |  varchar| 2    | sex         |                                 |
 | 5    | introduction|  varchar| 512  | introduction|                                 |
+| 6    | authorityId  |  varchar| 4   | authority_id|                                 |
 
 Authority
 
 | No  | name |  type |  length  | tableRowName  | introduction  |
-| :--  | :--------- |  ----:  | :--  | :--------  | :-----------------------------: |
-| 1    | authorityId      |  varchar| 4   | authority_id     | primary key                     |
-| 2    | authorityName    |  varchar| 24   | user_name   |                                 |
+| :--  | :--------- |  ----:  | :--  | :--------  | :-----------------------------:   |
+| 1    | authorityId      |  int | 2   | authority_id     | primary key               |
+| 2    | authorityName    |  varchar| 24   | user_name   |                            |
 
 Room
 
@@ -35,6 +37,7 @@ Room
 | :--  | :--------- |  ----:  | :--  | :--------  | :-----------------------------: |
 | 1    | roomId      |  varchar| 24   | room_id     | primary key                     |
 | 2    | roomName    |  varchar| 24   | room_name   |                                 |
+| 3    | createrId      |  varchar| 24   | creater_id     | primary key                     |
 
 ChatMsg
 
@@ -46,3 +49,9 @@ ChatMsg
 | 4    | message    |  varchar| 1024   | message    |                                 |
 | 5    | sendTime    |  timestamp| 24   | send_time    |                              |
 
+UserRoom
+
+| No  | name |  type |  length  | tableRowName  | introduction  |
+| :--  | :--------- |  ----:  | :--  | :--------  | :-----------------------------:   |
+| 1    | userId      |  varchar| 24   | user_id     | primary key                     |
+| 2    | roomId      |  varchar| 24   | room_id     | primary key                     |
