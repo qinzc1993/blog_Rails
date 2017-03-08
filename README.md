@@ -20,8 +20,7 @@ User
 | 2    | userName    |  varchar| 24   | user_name   |                                 |
 | 3    | password    |  varchar| 60   | password    |                                 |
 | 4    | sex         |  varchar| 2    | sex         |                                 |
-| 5    | userAuthorityId|  varchar| 24   | user_authority_id   |                                 |
-| 6    | introduction|  varchar| 512  | introduction|                                 |
+| 5    | introduction|  varchar| 512  | introduction|                                 |
 
 Authority
 
@@ -29,6 +28,13 @@ Authority
 | :--  | :---------: |  ----:  | :--  | :--------:  | :-----------------------------: |
 | 1    | authorityId      |  varchar| 4   | authority_id     | primary key                     |
 | 2    | authorityName    |  varchar| 24   | user_name   |                                 |
+
+Room
+
+| No  | name |  type |  length  | tableRowName  | introduction  |
+| :--  | :---------: |  ----:  | :--  | :--------:  | :-----------------------------: |
+| 1    | roomId      |  varchar| 24   | room_id     | primary key                     |
+| 2    | roomName    |  varchar| 24   | room_name   |                                 |
 
 ChatMsg
 
@@ -39,12 +45,4 @@ ChatMsg
 | 3    | messageId    |  varchar| 24   | message_id    | primary key                  |
 | 4    | message    |  varchar| 1024   | message    |                                 |
 | 5    | sendTime    |  timestamp| 24   | send_time    |                              |
-
-Room
-
-| No  | name |  type |  length  | tableRowName  | introduction  |
-| :--  | :---------: |  ----:  | :--  | :--------:  | :-----------------------------: |
-| 1    | roomId      |  varchar| 24   | room_id     | primary key                     |
-| 2    | roomName    |  varchar| 24   | room_name   |                                 |
-
 
