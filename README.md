@@ -7,16 +7,10 @@ study Rails.
   chat rooms online;
   
 ### database: MySql;
-  - User
-| No | name | type | length | tableRowName | introduction |
-  
+  - User  
   - Authority
   - Room
   - ChatMsg
-
-| No  | name | type | length  | tableRowName  | introduction  |
---|---------|----|--|---------|--------------
-1|UserId|varchar|24|user_id|
 
 | No  | name |  type |  length  | tableRowName  | introduction  |
 | :--  | :---------: |  ----:  | :--  | :--------:  | :-----------------------------: |
