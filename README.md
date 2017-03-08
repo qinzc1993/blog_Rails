@@ -22,7 +22,7 @@ User
 | 3    | password    |  varchar| 60   | password    |                                 |
 | 4    | sex         |  varchar| 2    | sex         |                                 |
 | 5    | introduction|  varchar| 512  | introduction|                                 |
-| 6    | authorityId  |  varchar| 4   | authority_id|                                 |
+| 6    | authorityId  |  int| 4   | authority_id|                                 |
 
 Authority
 
