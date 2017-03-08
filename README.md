@@ -9,5 +9,5 @@ study Rails.
 ### database: MySql;
   - User
   - Authority
-  - Room
+  - Room
   - ChatMsg
