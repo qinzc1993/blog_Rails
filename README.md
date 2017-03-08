@@ -8,7 +8,8 @@ study Rails.
   
 ### database: MySql;
   - User
-  |No|name|type|length|tableRowName|introduction|
+  
+  | No | name | type | length | tableRowName | introduction |
   
   - Authority
   - Room
