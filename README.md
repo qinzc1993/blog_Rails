@@ -7,7 +7,7 @@ study Rails.
   chat rooms online;
   
 ### database: MySql;
-  User  
-  Authority  
-  Room  
-  ChatMsg  
+  - User
+  - Authority
+  - Room
+  - ChatMsg
