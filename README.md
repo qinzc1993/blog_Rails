@@ -12,6 +12,7 @@ study Rails.
   - Room
   - ChatMsg
 
+User
 
 | No  | name |  type |  length  | tableRowName  | introduction  |
 | :--  | :---------: |  ----:  | :--  | :--------:  | :-----------------------------: |
@@ -21,6 +22,13 @@ study Rails.
 | 4    | sex         |  varchar| 2    | sex         |                                 |
 | 5    | userAuthorityId|  varchar| 24   | user_authority_id   |                                 |
 | 6    | introduction|  varchar| 512  | introduction|                                 |
+
+Authority
+
+| No  | name |  type |  length  | tableRowName  | introduction  |
+| :--  | :---------: |  ----:  | :--  | :--------:  | :-----------------------------: |
+| 1    | authorityId      |  varchar| 4   | authority_id     | primary key                     |
+| 2    | authorityName    |  varchar| 24   | user_name   |                                 |
 
 ChatMsg
 
