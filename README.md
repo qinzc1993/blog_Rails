@@ -25,7 +25,7 @@ User
 | 6    | authorityId  |  int| 4   | authority_id|                                 |
 
 ```sql
-CREATE TABLE `user` (
+CREATE TABLE `users` (
   `user_id` varchar(24) NOT NULL DEFAULT '',
   `user_name` varchar(24) NOT NULL,
   `password` varchar(60) NOT NULL,
@@ -45,7 +45,7 @@ Authority
 | 2    | authorityName    |  varchar| 24   | authority_name   |                            |
 
 ```sql
-CREATE TABLE `authority` (
+CREATE TABLE `authorities` (
   `authority_id` int(2) NOT NULL DEFAULT '0',
   `authority_name` varchar(24) NOT NULL,
   PRIMARY KEY (`authority_id`)
@@ -61,7 +61,7 @@ Room
 | 3    | createrId      |  varchar| 24   | creater_id     | primary key                     |
 
 ```sql
-CREATE TABLE `room` (
+CREATE TABLE `rooms` (
   `room_id` varchar(24) NOT NULL DEFAULT '',
   `room_name` varchar(24) NOT NULL,
   `creater_id` varchar(24) NOT NULL,
@@ -81,7 +81,7 @@ ChatMsg
 | 5    | sendTime    |  timestamp| 24   | create_time    |                              |
 
 ```sql
-CREATE TABLE `chat_msg` (
+CREATE TABLE `chat_msgs` (
   `user_id` varchar(24) NOT NULL,
   `room_id` varchar(24) NOT NULL,
   `message_id` varchar(24) NOT NULL,
@@ -99,7 +99,7 @@ UserRoom
 | 2    | roomId      |  varchar| 24   | room_id     | primary key                     |
 
 ```sql
-CREATE TABLE `user_room` (
+CREATE TABLE `user_rooms` (
   `user_id` varchar(24) NOT NULL,
   `room_id` varchar(24) NOT NULL,
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
